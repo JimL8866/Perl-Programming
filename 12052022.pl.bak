@@ -1,0 +1,10 @@
+use strict;
+use warnings;
+
+my $display = sub{
+	my ($name) = @_;
+	return $name;	
+};
+
+print $display ->("Jim");
+

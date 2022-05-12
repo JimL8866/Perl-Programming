@@ -1,0 +1,2 @@
+$foo = "\lEgg";
+print("$foo\n");
