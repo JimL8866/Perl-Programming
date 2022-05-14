@@ -23,4 +23,3 @@ my $text = "Hello";
 
 my $ref = \$text;
 
-say $ref;

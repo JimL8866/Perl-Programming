@@ -1,0 +1,56 @@
+$VAR1 = [
+          {
+            'ManagerGender' => 'F',
+            'Manager' => 'Mary Smith',
+            'Street' => '108B Clarke St',
+            'BSB' => '720141132',
+            'Branch' => 'Financial Services Centre',
+            'Postcode' => '3145',
+            'State' => 'VIC',
+            'Phone' => '(03) 9111 5555',
+            'Suburb' => 'East Malvern',
+            'Fax' => '(03) 9111 5556'
+          },
+          {
+            'ManagerGender' => 'M',
+            'Manager' => 'Billy Bloggs',
+            'Street' => '14 Home Rd',
+            'BSB' => '720141255',
+            'Branch' => 'Business Banking Centre',
+            'Postcode' => '3124',
+            'State' => 'VIC',
+            'Phone' => '(03) 9222 5555',
+            'Suburb' => 'Elwood',
+            'Fax' => 'N/A'
+          }
+        ];
+
+
+
+#need to install Text::CSV module by using cpanm Text::CSV on command line
+#not sure if it is ok to install, so i use my peronal computer to try and hard code the data accordingly
+#the code tested is all right
+use Text::CSV;
+my $file = q(C:\Users\Owner\OneDrive\Documents\GitHub\Perl Programming\exercise_8_bsb.txt);
+
+
+my $bsb_arr = [];
+
+read_csv($file);
+
+sub read_csv {
+	my ($file_name) = @_;
+	my $csv = Text::CSV -> new ();
+	open (my $data, $file_name);
+	
+	my $header = $csv -> getline($data);
+	$csv ->column_names($header);
+	
+	while (my $row = $csv ->getline_hr($data)) {
+		push @$bsb_arr, $row;
+	}
+	close($data);
+}
+
+print Dumper $bsb_arr;
+

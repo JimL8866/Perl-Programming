@@ -1,0 +1,3 @@
+BSB,Branch,Street,Suburb,State,Postcode,Phone,Fax,Manager,ManagerGender
+720141132,Financial Services Centre,108B Clarke St,East Malvern,VIC,3145,(03) 9111 5555,(03) 9111 5556,Mary Smith,F
+720141255,Business Banking Centre,14 Home Rd,Elwood,VIC,3124,(03) 9222 5555,N/A,Billy Bloggs,M
