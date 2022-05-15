@@ -1,0 +1,8 @@
+Name, Payment, Date
+Isa New , $99.10, 1505199
+Alber Els, approx. 13.20, 1106204   
+
+car Schele?, 66.23, 0101022
+P.G Wondhs, 70.22
+Dr. WHo,,16121987
+   Rene Decast, 0.57, 100072933

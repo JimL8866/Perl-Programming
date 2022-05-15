@@ -25,6 +25,11 @@ use Data::Dumper;
 # }
 
 my @arr = ("foo", "bar", "barz");
+my @arr2 = qw (haha haha hhhaa);
+my @arr3;
 
-say Dumper \@arr;
+push @arr3, \@arr;
+push @arr3, \@arr2;
+
+say Dumper \@arr3;
 
